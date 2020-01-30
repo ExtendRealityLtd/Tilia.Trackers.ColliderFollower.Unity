@@ -1,7 +1,7 @@
 [![Tilia logo][Tilia-Image]](#)
 
-> ### Tilia {scope} {feature} {platform?}
-> {Description of feature}.
+> ### Tracking -> Collider Follower for the Unity Software
+> A collider that follows a source GameObject around the scene via rigidbody velocity within the Unity physics system.
 
 [![Release][Version-Release]][Releases]
 [![License][License-Badge]][License]
@@ -9,9 +9,11 @@
 
 ## Introduction
 
-{Introduction into the purpose of the feature.}
+The Collider Follower prefab provides a [Unity] GameObject that contains a Rigidbody and a Collider that follows a given source GameObject around the scene by applying velocity to the Rigidbody of the Collider Follower.
 
-> **Requires** {platform and minimum version number}.
+This provides a mechanism for being able to physically push other Rigidbody objects around the scene with this follower.
+
+> **Requires** the Unity software version `2018.3.10f1` (or above).
 
 ## Getting Started
 
@@ -35,9 +37,9 @@ Please refer to the Extend Reality [Code of Conduct].
 
 Code released under the [MIT License][License].
 
-[License-Badge]: https://img.shields.io/github/license/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}.svg
-[Version-Release]: https://img.shields.io/github/release/ExtendRealityLtd/Tilia.{scope}.{feature}.{platform?}.svg
-[project coding conventions]: https://github.com/ExtendRealityLtd/.github/blob/master/CONVENTIONS/{project_type}
+[License-Badge]: https://img.shields.io/github/license/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity.svg
+[Version-Release]: https://img.shields.io/github/release/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity.svg
+[project coding conventions]: https://github.com/ExtendRealityLtd/.github/blob/master/CONVENTIONS/UNITY3D.md
 
 [Tilia-Image]: https://user-images.githubusercontent.com/1029673/67681496-5bf10700-f985-11e9-9413-e61801b6eab5.png
 [License]: LICENSE.md
@@ -49,3 +51,6 @@ Code released under the [MIT License][License].
 [Releases]: ../../releases
 [Contributing guidelines]: https://github.com/ExtendRealityLtd/.github/blob/master/CONTRIBUTING.md
 [Code of Conduct]: https://github.com/ExtendRealityLtd/.github/blob/master/CODE_OF_CONDUCT.md
+
+[Unity]: https://unity3d.com/
+[Zinnia]: https://github.com/ExtendRealityLtd/Zinnia.Unity
