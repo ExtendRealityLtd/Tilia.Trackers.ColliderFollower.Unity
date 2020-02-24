@@ -1,5 +1,14 @@
 # Changelog
 
+### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.0.1...v1.0.2) (2020-02-24)
+
+#### Bug Fixes
+
+* **package.json:** add missing object follower dependency ([969f912](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/969f912173dd571948b5ca024fd2e1d88a1b2375))
+  > The ColliderFollower prefab relies on the Tilia ObjectFollower prefab as an ObjectFollower is used to provide the following mechanism.
+  > 
+  > This means the other package is required for this dependency to work.
+
 ### [1.0.1](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.0.0...v1.0.1) (2020-02-24)
 
 #### Miscellaneous Chores
