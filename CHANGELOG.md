@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.0.2...v1.1.0) (2020-03-05)
+
+#### Features
+
+* **HowToGuides:** add how to guide for collider follower ([1f11102](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/1f111023277c9b963df47f90b3bdb356f0e0c758))
+  > added a guide for how to set up a collider follower.
+
 ### [1.0.2](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.0.1...v1.0.2) (2020-02-24)
 
 #### Bug Fixes
