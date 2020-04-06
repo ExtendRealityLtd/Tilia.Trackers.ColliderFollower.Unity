@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.4](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.1.3...v1.1.4) (2020-04-06)
+
+#### Bug Fixes
+
+* **HowToGuides:** fix spelling mistakes and incorrect numbers ([59e0340](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/59e03407e020a8435ff0a278674494e3fcb0f26d))
+  > The Adding A Collider Follower guide had some spelling mistakes and incorrect numbers for setting the box collider. This has now been updated with the correct information.
+
 ### [1.1.3](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.1.2...v1.1.3) (2020-04-03)
 
 #### Miscellaneous Chores
