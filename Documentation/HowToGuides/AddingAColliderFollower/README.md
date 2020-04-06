@@ -1,4 +1,4 @@
-# Addding A Collider Follower
+# Adding A Collider Follower
 
 > * Level: Beginner
 >
@@ -35,7 +35,7 @@ Let's make our Collider Follower's collider match our Interactor's shape. Expand
 
 Disable the `Sphere Collider` and create a `Box Collider` and set the Collider properties to:
 
-Size: `X = 0.02`, `Y = 0.02`, `Z = 0.01`
+Size: `X = 0.02`, `Y = 0.02`, `Z = 0.1`
 
 ![Disable Sphere](assets/images/DisableSphere.png)
 
@@ -47,7 +47,7 @@ Expand the `Tilia Input UnityInputManager Unity` Package directory in the Unity 
 
 ![Drag And Drop ButtonAction](assets/images/DragAndDropButtonAction.png)
 
-We are going to use the middle mouse button to activate and deativate the `Trackers.ColliderFollower` GameObject. Set the `Key Code` parameter in the `Unity Input Manager Button Action` component to `Mouse 2`.
+We are going to use the middle mouse button to activate and deactivate the `Trackers.ColliderFollower` GameObject. Set the `Key Code` parameter in the `Unity Input Manager Button Action` component to `Mouse 2`.
 
 ![Set Key Code To Mouse](assets/images/SetKeyCodeToMouse.png)
 
@@ -55,7 +55,7 @@ We are going to use the middle mouse button to activate and deativate the `Track
 
 Select the `Input.UnityInputManager.ButtonAction` GameObject from the Unity Hierarchy and click the `+` symbol in the bottom right corner of the `Activated` event parameter on the `Unity Input Manager Button Action` component. Drag and drop the `Trackers.ColliderFollower` GameObject into the event listener box that appears on the `Activated` event parameter on the `Unity Input Manager Button Action` component that displays `None (Object)`.
 
-![Drag And Drop Collider Follower Into Acivated Parameter](assets/images/DragAndDropColliderFollowerIntoAcivatedParameter.png)
+![Drag And Drop Collider Follower Into Activated Parameter](assets/images/DragAndDropColliderFollowerIntoAcivatedParameter.png)
 
 Select a Function to perform when the `Activated` event is emitted. For this example select the `GameObject -> Set Active` (be sure to select `Dynamic GameObject - SetActive` for this example)
 
