@@ -1,5 +1,21 @@
 # Changelog
 
+### [1.1.15](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.1.14...v1.1.15) (2020-06-08)
+
+#### Code Refactoring
+
+* **prefabs:** update nested follow prefab to be rigidbody follower ([0ad0e47](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/0ad0e47cb99fd23433f73383a6b51e584a3229b7))
+  > The Collider Follower relies upon a nested follower to get the collider to follow the source. This was previously a customised ObjectFollower that made it follow the rigidbody velocities. The ObjectFollower package now contains a RigidbodyFollower prefab that does exactly this so the nested prefab within the ColliderFollower has been updated to use this new prefab instead of customising the old one.
+  > 
+  > This change may break functionality for any customisation of the internal nested prefab and any customisations will need reapplying.
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.zinnia.unity from 1.18.0 to 1.19.0 ([0e4a4d0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/0e4a4d07dedcb4126bb7fd182ee7cf08243d05cd))
+  > Bumps [io.extendreality.zinnia.unity](https://github.com/ExtendRealityLtd/Zinnia.Unity) from 1.18.0 to 1.19.0. - [Release notes](https://github.com/ExtendRealityLtd/Zinnia.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Zinnia.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Zinnia.Unity/compare/v1.18.0...v1.19.0)
+  > 
+  > Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
 ### [1.1.14](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.1.13...v1.1.14) (2020-06-03)
 
 #### Miscellaneous Chores
