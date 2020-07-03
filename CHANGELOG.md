@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.1.18...v1.2.0) (2020-07-03)
+
+#### Features
+
+* **API:** add auto-generated API documentation ([f0fafdb](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/f0fafdbfa9e214c0056a2d62974c7a183d8256ba))
+  > The API documentation is auto generated with docfx and converted to markdown via turndown in a custom nodejs script.
+
+#### Bug Fixes
+
+* **package.json:** add docfx.json file ([a1779dc](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/a1779dcabe8409f77112d5d4b5240be8989297d3))
+  > The docfx.json file was missing from the package.json causing the build process to fail. It has now been added.
+
 ### [1.1.18](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.1.17...v1.1.18) (2020-06-21)
 
 #### Miscellaneous Chores
