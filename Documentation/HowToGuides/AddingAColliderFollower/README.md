@@ -8,18 +8,18 @@
 
 ## Introduction 
 
-The `Collider Follower` prefab enables a [Unity] collider to follow the GameObject around the scene and be able to interact with physics. One useful example is being able to push interactable objects around with the Interactor without having to grab it.
+The `Trackers.ColliderFollower` prefab enables a [Unity] collider to follow the GameObject around the scene and be able to interact with physics. One useful example is being able to push interactable objects around with the Interactor without having to grab it.
 
 ## Prerequisites
 
-* [Add the Tilia.Interactions.Interactables.Unity] prefab to the scene Hierarchy.
+* [Add the Tilia.Interactions.Interactables.Unity -> Interactions.Interactable] prefab to the scene hierarchy.
 * [Install the Tilia.Interactions.Interactables.Unity] package dependency in to your Unity project.
 
 ## Let's Start
 
 ### Step 1 
 
-Expand the `Tilia Trackers ColliderFollower Unity` Package directory in the Unity Project window and select the `Packages -> Tilia Trackers ColliderFollower Unity -> Runtime -> Prefabs` directory then drag and drop the `Trackers.ColliderFollower` prefab into the Unity hierarchy window.
+Expand the `Tilia Trackers ColliderFollower Unity` package directory in the Unity Project window and select the `Packages -> Tilia Trackers ColliderFollower Unity -> Runtime -> Prefabs` directory then drag and drop the `Trackers.ColliderFollower` prefab into the Unity Hierarchy window.
 
 ![Drag And Drop Collider Follower](assets/images/DragAndDropColliderFollower.png)
 
@@ -39,11 +39,11 @@ Size: `X = 0.02`, `Y = 0.02`, `Z = 0.1`
 
 ![Disable Sphere](assets/images/DisableSphere.png)
 
-Play the Unity Scene. Notice how the Left Controller can pass right through the cube whereas the Right Controller will push the cube. In the next step we are going to have a button to turn on and off our `Collider Follower`.
+Play the Unity scene. Notice how the Left Controller can pass right through the cube whereas the Right Controller will push the cube. In the next step we are going to have a button to turn on and off our `Collider Follower`.
 
 ### Step 4
 
-Expand the `Tilia Input UnityInputManager Unity` Package directory in the Unity Project window and select the `Packages -> Tilia Input UnityInputManager Unity -> Runtime -> Prefabs` directory then drag and drop the `Input.UnityInputManager.ButtonAction` prefab into the Unity hierarchy window. 
+Expand the `Tilia Input UnityInputManager Unity` package directory in the Unity Project window and select the `Packages -> Tilia Input UnityInputManager Unity -> Runtime -> Prefabs` directory then drag and drop the `Input.UnityInputManager.ButtonAction` prefab into the Unity Hierarchy window. 
 
 ![Drag And Drop ButtonAction](assets/images/DragAndDropButtonAction.png)
 
@@ -53,7 +53,7 @@ We are going to use the middle mouse button to activate and deactivate the `Trac
 
 ### Step 5
 
-Select the `Input.UnityInputManager.ButtonAction` GameObject from the Unity Hierarchy and click the `+` symbol in the bottom right corner of the `Activated` event parameter on the `Unity Input Manager Button Action` component. Drag and drop the `Trackers.ColliderFollower` GameObject into the event listener box that appears on the `Activated` event parameter on the `Unity Input Manager Button Action` component that displays `None (Object)`.
+Select the `Input.UnityInputManager.ButtonAction` GameObject from the Unity Hierarchy window and click the `+` symbol in the bottom right corner of the `Activated` event parameter on the `Unity Input Manager Button Action` component. Drag and drop the `Trackers.ColliderFollower` GameObject into the event listener box that appears on the `Activated` event parameter on the `Unity Input Manager Button Action` component that displays `None (Object)`.
 
 ![Drag And Drop Collider Follower Into Activated Parameter](assets/images/DragAndDropColliderFollowerIntoAcivatedParameter.png)
 
@@ -67,7 +67,7 @@ Select a Function to perform when the `Activated` event is emitted. For this exa
 
 ### Step 6
 
-Select the `Input.UnityInputManager.ButtonAction` GameObject from the Unity Hierarchy and click the `+` symbol in the bottom right corner of the `Activated` event parameter on the `Unity Input Manager Button Action` component. Drag and drop the `Trackers.ColliderFollower` GameObject into the event listener box that appears on the `Activated` event parameter on the `Unity Input Manager Button Action` component that displays `None (Object)`. 
+Select the `Input.UnityInputManager.ButtonAction` GameObject from the Unity Hierarchy window and click the `+` symbol in the bottom right corner of the `Activated` event parameter on the `Unity Input Manager Button Action` component. Drag and drop the `Trackers.ColliderFollower` GameObject into the event listener box that appears on the `Activated` event parameter on the `Unity Input Manager Button Action` component that displays `None (Object)`. 
 
 ![Drag And Drop Collider Follower Into Second Activated Parameter](assets/images/DragAndDropColliderFollowerIntoSecondAcivatedParameter.png)
 
@@ -77,7 +77,7 @@ Select a function to perform when the `Activated` event is emitted. For this exa
 
 ### Step 7
 
-Disable the `Trackers.ColliderFollower` GameObject in the Unity hierarchy, so it's not enabled by default.
+Disable the `Trackers.ColliderFollower` GameObject in the Unity Hierarchy window so it's not enabled by default.
 
 ![Disable Tracker Follower](assets/images/DisableTrackerFollower.png)
 
@@ -85,6 +85,6 @@ Disable the `Trackers.ColliderFollower` GameObject in the Unity hierarchy, so it
 
 Play the Unity scene and move the right controller through the Cube Interactable GameObject. Notice how it will go completely through the Cube Interactable GameObject. Now press the middle mouse button, which will enable the Collider Follower and the right controller will push the Cube Interactable around the scene.
 
-[Add the Tilia.Interactions.Interactables.Unity]: https://github.com/ExtendRealityLtd/Tilia.Interactions.Interactables.Unity/blob/master/Documentation/HowToGuides/AddingAnInteractable/README.md
+[Add the Tilia.Interactions.Interactables.Unity -> Interactions.Interactable]: https://github.com/ExtendRealityLtd/Tilia.Interactions.Interactables.Unity/blob/master/Documentation/HowToGuides/AddingAnInteractable/README.md
 [Install the Tilia.Interactions.Interactables.Unity]: ../Installation/README.md
 [Unity]: https://unity3d.com/
