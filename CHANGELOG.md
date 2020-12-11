@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.2.15](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.2.14...v1.2.15) (2020-12-11)
+
+#### Bug Fixes
+
+* **HowToGuides:** apply document styling guidelines ([11e195e](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/11e195e266ca918d659822d6fdafb962854aab52))
+  > The document style guidelines have been updated and now have been applied to the guides in this repo.
+
 ### [1.2.14](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.2.13...v1.2.14) (2020-11-01)
 
 #### Miscellaneous Chores
