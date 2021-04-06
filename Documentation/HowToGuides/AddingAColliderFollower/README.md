@@ -19,9 +19,7 @@ The `Trackers.ColliderFollower` prefab enables a [Unity] collider to follow the 
 
 ### Step 1 
 
-Expand the `Tilia Trackers ColliderFollower Unity` package directory in the Unity Project window and select the `Packages -> Tilia Trackers ColliderFollower Unity -> Runtime -> Prefabs` directory then drag and drop the `Trackers.ColliderFollower` prefab into the Unity Hierarchy window.
-
-![Drag And Drop Collider Follower](assets/images/DragAndDropColliderFollower.png)
+Add a `Trackers.ColliderFollower` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Trackers -> Trackers.ColliderFollower` from the Unity main top menu.
 
 ### Step 2 
 
@@ -43,9 +41,7 @@ Play the Unity scene. Notice how the Left Controller can pass right through the 
 
 ### Step 4
 
-Expand the `Tilia Input UnityInputManager Unity` package directory in the Unity Project window and select the `Packages -> Tilia Input UnityInputManager Unity -> Runtime -> Prefabs` directory then drag and drop the `Input.UnityInputManager.ButtonAction` prefab into the Unity Hierarchy window. 
-
-![Drag And Drop ButtonAction](assets/images/DragAndDropButtonAction.png)
+Add a `Input.UnityInputManager.ButtonAction` prefab to the Unity project hierarchy by selecting `GameObject -> Tilia -> Prefabs -> Input -> UnityInputManager -> Actions -> Input.UnityInputManager.ButtonAction` from the Unity main top menu.
 
 We are going to use the middle mouse button to activate and deactivate the `Trackers.ColliderFollower` GameObject. Set the `Key Code` parameter in the `Unity Input Manager Button Action` component to `Mouse 2`.
 
