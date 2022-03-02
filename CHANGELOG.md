@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.3.31...v1.4.0) (2022-03-02)
+
+#### Features
+
+* **package.json:** add information urls to package ([dbfcd60](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/dbfcd60884196babe2f41d286a16cb4de1a761a5))
+  > The changelog, documentation and license url has been added to the package.json as these are used within the Unity package manager.
+
 ### [1.3.31](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.3.30...v1.3.31) (2022-02-14)
 
 #### Miscellaneous Chores
