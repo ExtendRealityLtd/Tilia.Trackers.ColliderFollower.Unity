@@ -13,7 +13,7 @@ The `Trackers.ColliderFollower` prefab enables a [Unity] collider to follow the 
 ## Prerequisites
 
 * [Add the Tilia.Interactions.Interactables.Unity -> Interactions.Interactable] prefab to the scene hierarchy.
-* [Install the Tilia.Interactions.Interactables.Unity] package dependency in to your Unity project.
+* [Install the Tilia.Trackers.ColliderFollower.Unity] package dependency in to your Unity project.
 
 ## Let's Start
 
@@ -82,5 +82,5 @@ Disable the `Trackers.ColliderFollower` GameObject in the Unity Hierarchy window
 Play the Unity scene and move the right controller through the Cube Interactable GameObject. Notice how it will go completely through the Cube Interactable GameObject. Now press the middle mouse button, which will enable the Collider Follower and the right controller will push the Cube Interactable around the scene.
 
 [Add the Tilia.Interactions.Interactables.Unity -> Interactions.Interactable]: https://github.com/ExtendRealityLtd/Tilia.Interactions.Interactables.Unity/blob/master/Documentation/HowToGuides/AddingAnInteractable/README.md
-[Install the Tilia.Interactions.Interactables.Unity]: ../Installation/README.md
+[Install the Tilia.Trackers.ColliderFollower.Unity]: ../Installation/README.md
 [Unity]: https://unity3d.com/
