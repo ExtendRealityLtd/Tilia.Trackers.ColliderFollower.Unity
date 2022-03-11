@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.4.2](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.4.1...v1.4.2) (2022-03-11)
+
+#### Bug Fixes
+
+* **HowToGuides:** provide correct package dependency title ([e5a5bf6](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/e5a5bf6c5730a0dc0da161e680fce087387b3d97))
+  > The package dependency title to install has been corrected from saying the Interactables package to the ColliderFollower package.
+
 ### [1.4.1](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v1.4.0...v1.4.1) (2022-03-02)
 
 #### Miscellaneous Chores
