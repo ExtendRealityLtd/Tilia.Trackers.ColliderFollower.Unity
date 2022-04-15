@@ -1,7 +1,5 @@
 ﻿namespace Tilia.Trackers.ColliderFollower
 {
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
     using Zinnia.Data.Attribute;
     using Zinnia.Data.Operation.Extraction;
@@ -14,33 +12,83 @@
     public class ColliderFollowerConfigurator : MonoBehaviour
     {
         #region Facade Settings
+        [Header("Facade Settings")]
+        [Tooltip("The public interface facade.")]
+        [SerializeField]
+        [Restricted]
+        private ColliderFollowerFacade facade;
         /// <summary>
         /// The public interface facade.
         /// </summary>
-        [Serialized]
-        [field: Header("Facade Settings"), DocumentedByXml, Restricted]
-        public ColliderFollowerFacade Facade { get; protected set; }
+        public ColliderFollowerFacade Facade
+        {
+            get
+            {
+                return facade;
+            }
+            protected set
+            {
+                facade = value;
+            }
+        }
         #endregion
 
         #region Reference Settings
+        [Header("Reference Settings")]
+        [Tooltip("The Zinnia.Tracking.Follow.ObjectFollower that performs the source follow.")]
+        [SerializeField]
+        [Restricted]
+        private ObjectFollower objectFollower;
         /// <summary>
         /// The <see cref="Zinnia.Tracking.Follow.ObjectFollower"/> that performs the source follow.
         /// </summary>
-        [Serialized]
-        [field: Header("Reference Settings"), DocumentedByXml, Restricted]
-        public ObjectFollower ObjectFollower { get; protected set; }
+        public ObjectFollower ObjectFollower
+        {
+            get
+            {
+                return objectFollower;
+            }
+            protected set
+            {
+                objectFollower = value;
+            }
+        }
+        [Tooltip("The TransformPositionExtractor that extracts the source position.")]
+        [SerializeField]
+        [Restricted]
+        private TransformPositionExtractor positionExtractor;
         /// <summary>
         /// The <see cref="TransformPositionExtractor"/> that extracts the source position.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public TransformPositionExtractor PositionExtractor { get; protected set; }
+        public TransformPositionExtractor PositionExtractor
+        {
+            get
+            {
+                return positionExtractor;
+            }
+            protected set
+            {
+                positionExtractor = value;
+            }
+        }
+        [Tooltip("The GameObject containing the collider.")]
+        [SerializeField]
+        [Restricted]
+        private GameObject colliderContainer;
         /// <summary>
         /// The <see cref="GameObject"/> containing the collider.
         /// </summary>
-        [Serialized]
-        [field: DocumentedByXml, Restricted]
-        public GameObject ColliderContainer { get; protected set; }
+        public GameObject ColliderContainer
+        {
+            get
+            {
+                return colliderContainer;
+            }
+            protected set
+            {
+                colliderContainer = value;
+            }
+        }
         #endregion
 
         /// <summary>
