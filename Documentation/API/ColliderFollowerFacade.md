@@ -11,6 +11,7 @@ The public interface for the ColliderFollower prefab.
   * [Configuration]
   * [Source]
 * [Methods]
+  * [ClearSource()]
   * [OnAfterSourceChange()]
   * [SnapToSource()]
 
@@ -55,6 +56,16 @@ public GameObject Source { get; set; }
 
 ### Methods
 
+#### ClearSource()
+
+Clears [Source].
+
+##### Declaration
+
+```
+public virtual void ClearSource()
+```
+
 #### OnAfterSourceChange()
 
 Called after [Source] has been changed.
@@ -78,6 +89,7 @@ public virtual void SnapToSource()
 [Tilia.Trackers.ColliderFollower]: README.md
 [ColliderFollowerConfigurator]: ColliderFollowerConfigurator.md
 [Source]: ColliderFollowerFacade.md#Source
+[Source]: ColliderFollowerFacade.md#Source
 [Inheritance]: #Inheritance
 [Namespace]: #Namespace
 [Syntax]: #Syntax
@@ -85,5 +97,6 @@ public virtual void SnapToSource()
 [Configuration]: #Configuration
 [Source]: #Source
 [Methods]: #Methods
+[ClearSource()]: #ClearSource
 [OnAfterSourceChange()]: #OnAfterSourceChange
 [SnapToSource()]: #SnapToSource

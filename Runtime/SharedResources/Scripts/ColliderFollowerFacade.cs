@@ -1,11 +1,7 @@
 ﻿namespace Tilia.Trackers.ColliderFollower
 {
-    using Malimbe.MemberChangeMethod;
-    using Malimbe.MemberClearanceMethod;
-    using Malimbe.PropertySerializationAttribute;
-    using Malimbe.XmlDocumentationAttribute;
     using UnityEngine;
-    using Zinnia.Data.Attribute;
+    using Zinnia.Extension;
 
     /// <summary>
     /// The public interface for the ColliderFollower prefab.
@@ -13,22 +9,63 @@
     public class ColliderFollowerFacade : MonoBehaviour
     {
         #region Tracking Settings
+        [Header("Tracking Settings")]
+        [Tooltip("The source to track.")]
+        [SerializeField]
+        private GameObject source;
         /// <summary>
         /// The source to track.
         /// </summary>
-        [Serialized, Cleared]
-        [field: Header("Tracking Settings"), DocumentedByXml]
-        public GameObject Source { get; set; }
+        public GameObject Source
+        {
+            get
+            {
+                return source;
+            }
+            set
+            {
+                source = value;
+                if (this.IsMemberChangeAllowed())
+                {
+                    OnAfterSourceChange();
+                }
+            }
+        }
         #endregion
 
         #region Reference Settings
+        [Header("Reference Settings")]
+        [Tooltip("The linked Internal Setup.")]
+        [SerializeField]
+        private ColliderFollowerConfigurator configuration;
         /// <summary>
         /// The linked Internal Setup.
         /// </summary>
-        [Serialized]
-        [field: Header("Reference Settings"), DocumentedByXml, Restricted]
-        public ColliderFollowerConfigurator Configuration { get; protected set; }
+        public ColliderFollowerConfigurator Configuration
+        {
+            get
+            {
+                return configuration;
+            }
+            protected set
+            {
+                configuration = value;
+            }
+        }
         #endregion
+
+        /// <summary>
+        /// Clears <see cref="Source"/>.
+        /// </summary>
+        public virtual void ClearSource()
+        {
+            if (!this.IsValidState())
+            {
+                return;
+            }
+
+            Source = default;
+        }
 
         /// <summary>
         /// Snaps the tracked collider directly to the source current position.
@@ -41,7 +78,6 @@
         /// <summary>
         /// Called after <see cref="Source"/> has been changed.
         /// </summary>
-        [CalledAfterChangeOf(nameof(Source))]
         protected virtual void OnAfterSourceChange()
         {
             Configuration.SetSource(Source);
