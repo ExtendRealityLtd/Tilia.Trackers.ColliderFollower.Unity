@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.0.9...v2.1.0) (2023-02-07)
+
+#### Features
+
+* **prefab:** add snap on enable and rotation snap ([9ce831d](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/9ce831d964d6f2f8d1da3dbe7973bd40592e5f62))
+  > The ability to snap the rotation in the SnapToSource method has been added so the position and rotation will now match the source.
+  > 
+  > An additional option has been added that will call SnapToSource whenever the Facade is enabled as this is a common use case and easier just to handle it directly within the script.
+
 ### [2.0.9](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.0.8...v2.0.9) (2022-06-16)
 
 #### Miscellaneous Chores
