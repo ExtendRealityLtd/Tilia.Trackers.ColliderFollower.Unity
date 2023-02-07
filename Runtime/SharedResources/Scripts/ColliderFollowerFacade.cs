@@ -31,6 +31,23 @@
                 }
             }
         }
+        [Tooltip("Whether to snap to source on enable.")]
+        [SerializeField]
+        private bool snapOnEnable;
+        /// <summary>
+        /// Whether to snap to source on enable.
+        /// </summary>
+        public bool SnapOnEnable
+        {
+            get
+            {
+                return snapOnEnable;
+            }
+            set
+            {
+                snapOnEnable = value;
+            }
+        }
         #endregion
 
         #region Reference Settings

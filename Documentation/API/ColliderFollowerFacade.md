@@ -9,6 +9,7 @@ The public interface for the ColliderFollower prefab.
 * [Syntax]
 * [Properties]
   * [Configuration]
+  * [SnapOnEnable]
   * [Source]
 * [Methods]
   * [ClearSource()]
@@ -42,6 +43,16 @@ The linked Internal Setup.
 
 ```
 public ColliderFollowerConfigurator Configuration { get; protected set; }
+```
+
+#### SnapOnEnable
+
+Whether to snap to source on enable.
+
+##### Declaration
+
+```
+public bool SnapOnEnable { get; set; }
 ```
 
 #### Source
@@ -95,6 +106,7 @@ public virtual void SnapToSource()
 [Syntax]: #Syntax
 [Properties]: #Properties
 [Configuration]: #Configuration
+[SnapOnEnable]: #SnapOnEnable
 [Source]: #Source
 [Methods]: #Methods
 [ClearSource()]: #ClearSource

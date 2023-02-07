@@ -12,6 +12,7 @@ Sets up the ColliderFollower prefab based on the provided settings and implement
   * [Facade]
   * [ObjectFollower]
   * [PositionExtractor]
+  * [RotationExtractor]
 * [Methods]
   * [OnEnable()]
   * [SetSource(GameObject)]
@@ -76,6 +77,16 @@ The TransformPositionExtractor that extracts the source position.
 public TransformPositionExtractor PositionExtractor { get; protected set; }
 ```
 
+#### RotationExtractor
+
+The TransformEulerRotationExtractor that extracts the source rotation.
+
+##### Declaration
+
+```
+public TransformEulerRotationExtractor RotationExtractor { get; protected set; }
+```
+
 ### Methods
 
 #### OnEnable()
@@ -122,6 +133,7 @@ public virtual void SnapToSource()
 [Facade]: #Facade
 [ObjectFollower]: #ObjectFollower
 [PositionExtractor]: #PositionExtractor
+[RotationExtractor]: #RotationExtractor
 [Methods]: #Methods
 [OnEnable()]: #OnEnable
 [SetSource(GameObject)]: #SetSourceGameObject

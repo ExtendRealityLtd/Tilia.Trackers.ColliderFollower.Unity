@@ -71,6 +71,24 @@
                 positionExtractor = value;
             }
         }
+        [Tooltip("The TransformEulerRotationExtractor that extracts the source rotation.")]
+        [SerializeField]
+        [Restricted]
+        private TransformEulerRotationExtractor rotationExtractor;
+        /// <summary>
+        /// The <see cref="TransformEulerRotationExtractor"/> that extracts the source rotation.
+        /// </summary>
+        public TransformEulerRotationExtractor RotationExtractor
+        {
+            get
+            {
+                return rotationExtractor;
+            }
+            protected set
+            {
+                rotationExtractor = value;
+            }
+        }
         [Tooltip("The GameObject containing the collider.")]
         [SerializeField]
         [Restricted]
@@ -100,6 +118,7 @@
             ObjectFollower.Sources.RunWhenActiveAndEnabled(() => ObjectFollower.Sources.Clear());
             ObjectFollower.Sources.RunWhenActiveAndEnabled(() => ObjectFollower.Sources.Add(source));
             PositionExtractor.Source = source;
+            RotationExtractor.Source = source;
         }
 
         /// <summary>
@@ -108,11 +127,16 @@
         public virtual void SnapToSource()
         {
             PositionExtractor.DoExtract();
+            RotationExtractor.DoExtract();
         }
 
         protected virtual void OnEnable()
         {
             SetSource(Facade.Source);
+            if (Facade.SnapOnEnable)
+            {
+                SnapToSource();
+            }
         }
     }
 }
