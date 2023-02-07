@@ -58,13 +58,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: Zinnia.Data.Operation.Extraction.TransformVector3PropertyExtractor+UnityEvent,
-      Zinnia.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   Failed:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   source: {fileID: 0}
   useLocal: 0
 --- !u!114 &9092021811401245231
@@ -86,6 +82,10 @@ MonoBehaviour:
     yState: 1
     zState: 1
   facingDirection: {fileID: 0}
+  applyFacingDirectionOnAxis:
+    xState: 1
+    yState: 1
+    zState: 1
 --- !u!1 &5317674022107406938
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 0}
+  snapOnEnable: 0
   configuration: {fileID: 7631982828909951989}
 --- !u!1 &5673201884694615319
 GameObject:
@@ -163,6 +164,7 @@ Transform:
   m_Children:
   - {fileID: 4047302465864999380}
   - {fileID: 7246870332922131805}
+  - {fileID: 8332877985774527500}
   m_Father: {fileID: 2632195220641112780}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -181,7 +183,94 @@ MonoBehaviour:
   facade: {fileID: 6434841534626989321}
   objectFollower: {fileID: 4153194663392602274}
   positionExtractor: {fileID: 7706563081135637935}
+  rotationExtractor: {fileID: 7952913163061571275}
   colliderContainer: {fileID: 8972421161141143531}
+--- !u!1 &7452137847499880898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8332877985774527500}
+  - component: {fileID: 7952913163061571275}
+  - component: {fileID: 123201446100621182}
+  m_Layer: 0
+  m_Name: SnapToSourceRotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8332877985774527500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452137847499880898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6053823821777842292}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7952913163061571275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452137847499880898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b707a2f31799e04babea4e25cd5934b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Extracted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 123201446100621182}
+        m_MethodName: DoSetProperty
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Failed:
+    m_PersistentCalls:
+      m_Calls: []
+  source: {fileID: 0}
+  useLocal: 0
+--- !u!114 &123201446100621182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7452137847499880898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5c27c3f6d672474d90c5c465ff323af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 8972421161141143531}
+  useLocalValues: 0
+  mutateOnAxis:
+    xState: 1
+    yState: 1
+    zState: 1
+  origin: {fileID: 0}
+  applyOriginOnAxis:
+    xState: 1
+    yState: 1
+    zState: 1
 --- !u!1 &8972421161141143531
 GameObject:
   m_ObjectHideFlags: 0
