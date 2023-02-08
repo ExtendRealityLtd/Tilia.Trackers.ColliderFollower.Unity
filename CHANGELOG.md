@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.1.0...v2.2.0) (2023-02-08)
+
+#### Features
+
+* **prefab:** add collider follower tag for easy collider recognition ([4035d07](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/4035d076e53fd8a30264dffcdf08a3fe262757fa))
+  > The new ColliderFollowerTag has been added to the rigidbody gameobject so it is easy to identify all collider followers.
+
 ## [2.1.0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.0.9...v2.1.0) (2023-02-07)
 
 #### Features
