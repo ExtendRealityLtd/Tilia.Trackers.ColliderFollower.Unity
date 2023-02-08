@@ -10,5 +10,10 @@ Sets up the ColliderFollower prefab based on the provided settings and implement
 
 The public interface for the ColliderFollower prefab.
 
+#### [ColliderFollowerTag]
+
+Provides the ability to identify a collider follower Rigidbody component.
+
 [ColliderFollowerConfigurator]: ColliderFollowerConfigurator.md
 [ColliderFollowerFacade]: ColliderFollowerFacade.md
+[ColliderFollowerTag]: ColliderFollowerTag.md
