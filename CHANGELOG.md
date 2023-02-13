@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.2.2...v2.3.0) (2023-02-13)
+
+#### Features
+
+* **Facade:** add linked follow tracking container reference ([42c2931](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/42c2931c9b150aca1c236f97d65f35e3bcfe889e))
+  > A new reference to the internal follow tracking container has been added so it is easier to get to the internal logic.
+
 ### [2.2.2](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.2.1...v2.2.2) (2023-02-08)
 
 #### Miscellaneous Chores
