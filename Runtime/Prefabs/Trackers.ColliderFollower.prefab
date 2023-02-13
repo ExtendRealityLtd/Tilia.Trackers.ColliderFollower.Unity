@@ -134,6 +134,10 @@ MonoBehaviour:
   source: {fileID: 0}
   snapOnEnable: 0
   configuration: {fileID: 7631982828909951989}
+  linkedFollowTrackingContainer:
+    linkedObject: {fileID: 4052246705190749232}
+    linkText: Show Follow Tracking Container
+    isActive: 1
 --- !u!1 &5673201884694615319
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,3 +446,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b5781728bc3ef47af5d7aca57b0e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4052246705190749232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5172667690854395811, guid: 5d59f26fca26fd746acfe45b38eb4fa5,
+    type: 3}
+  m_PrefabInstance: {fileID: 9220409073195838355}
+  m_PrefabAsset: {fileID: 0}
