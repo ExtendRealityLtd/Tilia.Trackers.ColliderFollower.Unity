@@ -1,6 +1,7 @@
 ﻿namespace Tilia.Trackers.ColliderFollower
 {
     using UnityEngine;
+    using Zinnia.Data.Type;
     using Zinnia.Extension;
 
     /// <summary>
@@ -67,6 +68,23 @@
             protected set
             {
                 configuration = value;
+            }
+        }
+        [Tooltip("The GameObject reference for the nested Follow Tracking Container.")]
+        [SerializeField]
+        private ObjectReference linkedFollowTrackingContainer;
+        /// <summary>
+        /// The <see cref="GameObject"/> reference for the nested Follow Tracking Container.
+        /// </summary>
+        public ObjectReference LinkedFollowTrackingContainer
+        {
+            get
+            {
+                return linkedFollowTrackingContainer;
+            }
+            protected set
+            {
+                linkedFollowTrackingContainer = value;
             }
         }
         #endregion
