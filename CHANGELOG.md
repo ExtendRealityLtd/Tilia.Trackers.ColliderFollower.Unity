@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.3.12](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.3.11...v2.3.12) (2023-03-21)
+
+#### Miscellaneous Chores
+
+* **deps:** bump io.extendreality.tilia.mutators.objectfollower.unity ([79cc689](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/commit/79cc689abd9fd370738a7e7f8218f5ba45e83a1f))
+  > Bumps [io.extendreality.tilia.mutators.objectfollower.unity](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity) from 2.0.10 to 2.0.11. - [Release notes](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/releases) - [Changelog](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/blob/master/CHANGELOG.md) - [Commits](https://github.com/ExtendRealityLtd/Tilia.Mutators.ObjectFollower.Unity/compare/v2.0.10...v2.0.11)
+
 ### [2.3.11](https://github.com/ExtendRealityLtd/Tilia.Trackers.ColliderFollower.Unity/compare/v2.3.10...v2.3.11) (2023-03-21)
 
 #### Miscellaneous Chores
